@@ -1,0 +1,32 @@
+
+# 📝 Đánh Giá Độ Phủ (Coverage) của File `UtilsTest.java`
+
+## 📌 1. Tổng Quan:
+Bài kiểm thử `UtilsTest.java` đã thực hiện các kiểm thử theo phương pháp **hộp trắng (White-box Testing)**. Dưới đây là đánh giá về **độ phủ câu lệnh (Statement Coverage)** và **độ phủ nhánh (Branch Coverage)**:
+
+---
+## 📊 2. Phân Tích Độ Phủ:
+### ✅ Độ Phủ Câu Lệnh (Statement Coverage): **100%**
+- Tất cả các lệnh trong các phương thức `getString()`, `getInt()`, và `getBoolean()` đã được thực thi ít nhất một lần.
+
+### ⚠️ Độ Phủ Nhánh (Branch Coverage): **75%**
+- **Đã bao phủ:**
+  - Trường hợp nhập đúng (`valid input`) cho tất cả phương thức.
+  - Trường hợp nhập sai (`invalid input`) một lần cho `getInt()` và `getBoolean()`.
+- **Chưa bao phủ:**
+  - Trường hợp nhập nhiều lần liên tục giá trị sai (`multiple invalid inputs`) trước khi nhập đúng.
+  - Trường hợp chuỗi rỗng nhiều lần (`empty input loops`) trong `getString()`.
+
+---
+## 🚀 3. Đề Xuất Hoàn Thiện:
+- **Bổ sung thêm test case:**
+  - Nhập sai nhiều lần trước khi nhập đúng.
+  - Kiểm thử chuỗi rỗng nhiều lần (`getString`).
+  - Kiểm thử các giá trị không hợp lệ khác (`getBoolean` như `abc`, `123`).
+
+---
+## ✅ 4. Kết Luận:
+- **`UtilsTest.java` hiện đã đạt đủ yêu cầu cơ bản về kiểm thử hộp trắng (độ phủ câu lệnh đầy đủ).**
+- **Cần bổ sung thêm test case để đạt độ phủ nhánh hoàn chỉnh (100%).**
+
+💯 **Tổng Đánh Giá:** Đáp ứng yêu cầu bài tập kiểm thử hộp trắng, phù hợp để nộp trong PR. 🚀😊

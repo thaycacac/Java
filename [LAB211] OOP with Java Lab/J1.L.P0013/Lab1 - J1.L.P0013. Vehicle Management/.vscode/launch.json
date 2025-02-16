@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run JUnit Tests",
+      "request": "launch",
+      "mainClass": "org.junit.platform.console.ConsoleLauncher",
+      "args": ["--scan-classpath", "--include-classname=.*UtilsTest"],
+      "classPaths": ["bin", "lib/junit-platform-console-standalone-1.10.0.jar"]
+    }
+  ]
+}
